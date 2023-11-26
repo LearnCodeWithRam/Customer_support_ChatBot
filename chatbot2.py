@@ -79,7 +79,7 @@ def init():
    
 def main():
     init()
-    st.title('WebWisdom :blue[Bot] ')
+    #st.title('WebWisdom :blue[Bot] ')
     st.title('Web-ChatBot Wisdom')
     st.header('Powered :blue[By]',)
     st.write('''<style>
@@ -93,21 +93,18 @@ def main():
     st.header('', divider='rainbow')
     # st.header('This is a header with a divider', divider='rainbow')
     #st.subheader('This is a subheader with a divider', divider='rainbow')
-    st.subheader('Enter Website Url to  :blue[Explore]')
-    xyz = st.text_input("Please enter Website url in e.g ihubiitmandi.in")
+    # st.subheader('Enter Website Url to  :blue[Explore]')
+    # xyz = st.text_input("Please enter Website url in e.g ihubiitmandi.in")
     my_bar = st.progress(0)
     status_text = st.empty()
     # st.header('This is a header with a divider', divider='rainbow')
     #st.subheader('This is a subheader with a divider', divider='rainbow')
     st.subheader('Enter Website Url to  :blue[Explore]')
-    xyz = st.text_input("Please input the website URL here, for example, ihubiitmandi.in.")
+    xyz = st.text_input("Please input the website URL here and Press Enter button: for example, ihubiitmandi.in.")
     #st.header('', divider='rainbow')
     main_contener = st.container()
     # link = st.chat_input("Type Your website link here and Press Enter button: ", key="user_input2")
-    
 
-    #main_contener.header("Customer Support ChatBot")
-    # main_contener.title('Customer Support :blue[ChatBot] ')
    
     link(xyz)
     main_contener.style.width = "100px"  # Set the width
@@ -115,10 +112,9 @@ def main():
     main_contener.style.overflow = "auto"  # Add both vertical and horizontal scrollbars
     #main_contener.title('_Streamlit_ is :blue[cool] :sunglasses:')
     with main_contener:
-
         message("Hello! I'm an AI Assistant ready to help with your website queries.")
         user_input = st.chat_input("Type Your query here and Press Enter button: ", key="user_input")
-        # link = st.chat_input("Type Your website link here and Press Enter button: ", key="user_input2")
+        #link = st.chat_input("Type Your website link here and Press Enter button: ", key="user_input2")
         #user_input = st.text_input("Type Your query here and Press Enter button: ", key="user_input")
         if user_input:
             #st.write(f"User has sent the following prompt: {user_input}")
